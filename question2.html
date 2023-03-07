@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	
+	<title>SAT Exam</title>
+
+		</head>
+    <style>
+      	body {
+			font-family: 'Poppins', sans-serif;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+
+		}
+    </style>
+		<body>
+      <div class="section-name">Section 1: Reading-Writing</div>
+      <div id="timer">20:00</div>
+      <div class="separator_one"></div>
+      <button class="hide-button">HIDE</button>         
+      <button class="button_one" onclick="checkAnswer()">next</button>
+      <button class="button_two" onclick="gotopage1()">home</button>
+      <div class="ques">1. Select correct one.</div>
+      <div class="button-container">
+        <button class="answer-button" id="q2_a1" data-is-correct="false">Option 1</button>
+        <button class="answer-button" id="q2_a2" data-is-correct="false">Option 2</button>
+        <button class="answer-button" id="q2_a3" data-is-correct="true">Option 3</button>
+        <button class="answer-button" id="q2_a4" data-is-correct="false">Option 4</button>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">2/4</button>
+        <div class="dropdown-content">
+          <a href="question1.html">Question 1</a>
+          <a href="question2.html">Question 2</a>
+          <a href="question3.html">Question 3</a>
+          <a href="question4.html">Question 4</a>
+        </div>
+      </div>
+
+
+
+
+			
+			<!-- Add the rest of your exam content here -->
+			<div class="scroll">
+				This passage is adapted from J. D. Watson and F. H. C. Crick,
+“Genetical Implications of the Structure of <br> Deoxyribonucleic
+Acid.” ©1953 by Nature Publishing Group. Watson and Crick
+deduced the structure <br> of DNA using evidence from Rosalind
+Franklin and R. G. Gosling’s X-ray crystallography diagrams <br>
+of DNA and from Erwin Chargaff’s data on the base
+composition of DNA.</div>
+
+				 <div class="separator_two"></div>
+
+		</body>
+		<script src="script.js"></script>
+</body>
+</html>

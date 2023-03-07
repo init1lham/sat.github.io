@@ -1,0 +1,160 @@
+/* Header Styling */
+body{
+    font-family: 'Poppins';
+}
+header {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 100px;
+    width: 100px;
+  }  
+  
+  nav {
+    display: inline-block;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  li {
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0084ff;
+  }
+  
+  h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #333;
+    margin-top: 40px;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #666;
+    margin: 20px 0;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: #0084ff;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #005fbf;
+  }
+  
+  /* Features Section Styling */
+  .features {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 50px;
+  }
+  
+  .feature {
+    display: inline-block;
+    margin: 0 40px;
+    text-align: left;
+    vertical-align: top;
+    max-width: 300px;
+  }
+  
+  .feature i {
+    font-size: 48px;
+    color: #0084ff;
+    margin-bottom: 20px;
+  }
+  
+  .feature h3 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #333;
+    margin: 20px 0;
+  }
+  
+  .feature p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  footer p {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #0084ff;
+  }
+  .about {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 50px;
+  }
+  
+  .about p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  

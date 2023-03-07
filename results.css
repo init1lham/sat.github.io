@@ -1,0 +1,77 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  color: #0084ff;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+section h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.score-box {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.score-box p {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.percentile {
+  font-size: 10px;
+  color: #666;
+  margin: 0;
+}
+
+/* Animation */
+.score-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0), #fff 50%, rgba(255,255,255,0));
+  z-index: 1;
+  transition: transform 0.5s ease;
+  transform-origin: left;
+}
+
+.score-box:hover::before {
+  transform: translateX(100%);
+}
+
+

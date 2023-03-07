@@ -1,0 +1,72 @@
+	<script>
+const blockDiv = document.createElement("div");
+blockDiv.style.cssText = `
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+`;
+
+const heading = document.createElement("h1");
+heading.style.cssText = `
+  font-size: 56px;
+  font-weight: lighter;
+  color: #000;
+  text-align: center;
+`;
+
+document.body.appendChild(blockDiv);
+blockDiv.appendChild(heading);
+
+const hideButton = document.querySelector(".hide-button");
+const timerElement = document.getElementById("timer");
+
+let isTimerHidden = false;
+
+hideButton.addEventListener("click", function () {
+  isTimerHidden = !isTimerHidden;
+  timerElement.style.display = isTimerHidden ? "none" : "block";
+  hideButton.innerText = isTimerHidden ? "SHOW" : "HIDE";
+});
+
+const EXAM_DURATION = 1;
+
+const END_TIME = new Date();
+END_TIME.setMinutes(END_TIME.getMinutes() + EXAM_DURATION);
+
+let timerInterval = setInterval(() => {
+  const REMAINING_TIME = Math.round((END_TIME - new Date()) / 1000);
+
+  if (REMAINING_TIME <= 0) {
+    clearInterval(timerInterval);
+    timerElement.innerHTML = "00:00";
+    blockDiv.style.display = "flex";
+    heading.textContent = "Your time is up";
+    const seeResultsLink = document.createElement("a");
+    seeResultsLink.style.cssText = `
+      display: block;
+      font-size: 24px;
+      color: #000;
+      text-align: center;
+      margin-top: 30px;
+    `;
+    seeResultsLink.textContent = "See Results";
+    seeResultsLink.href = "results.html";
+    blockDiv.appendChild(seeResultsLink);
+    document.querySelector("html").style.opacity = 0.4;
+  } else {
+    const TIMER_ELEMENT = document.getElementById("timer");
+    const MINUTES = Math.floor(REMAINING_TIME / 60);
+    const SECONDS = REMAINING_TIME % 60;
+    TIMER_ELEMENT.innerHTML = `${MINUTES}:${SECONDS < 10 ? "0" : ""}${SECONDS}`;
+  }
+}, 1000);
+
+	</script>

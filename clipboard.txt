@@ -1,0 +1,34 @@
+	<button class="button_one" onclick="goToPage()">next</button>
+			<button class="button_two"  onclick="goToPage1()">back</button>
+			<div class="ques">2. Select correct one.</div>
+			<div class="button-container">
+				<button class="answer-button">Option 1</button>
+				<button class="answer-button">Option 2</button>
+				<button class="answer-button">Option 3</button>
+				<button class="answer-button">Option 4</button>
+			
+			  </div>
+ 
+
+			
+			<!-- Add the rest of your exam content here -->
+			<div class="scroll">
+				This passage is adapted from J. D. Watson and F. H. C. Crick,
+“Genetical Implications of the Structure of <br> Deoxyribonucleic
+Acid.” ©1953 by Nature Publishing Group. Watson and Crick
+deduced the structure <br> of DNA using evidence from Rosalind
+Franklin and R. G. Gosling’s X-ray crystallography diagrams <br>
+of DNA and from Erwin Chargaff’s data on the base
+composition of DNA.</div>
+
+				 <div class="separator_two"></div>
+
+		</body>
+	<script>
+    function goToPage() {
+  window.location.href = "3.html";
+    }
+
+    function goToPage1() {
+  window.location.href = "1.html";
+    }
