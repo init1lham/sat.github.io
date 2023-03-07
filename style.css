@@ -6,6 +6,12 @@
 			align-items: center;
 		}
 		
+		a {
+			color: white;
+			text-decoration: none;
+		  }
+
+		  
 		#about {
 			margin-top:50%;
 			text-align: center;
